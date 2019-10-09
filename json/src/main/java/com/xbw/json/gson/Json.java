@@ -10,6 +10,14 @@ import com.google.gson.reflect.TypeToken;
 import com.xbw.json.JsonBean;
 
 import lombok.extern.slf4j.Slf4j;
+
+/**
+ * 
+ * @author xbw
+ * 
+ *         2019年10月9日
+ *
+ */
 @Slf4j
 public class Json {
 

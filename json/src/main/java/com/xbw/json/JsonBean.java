@@ -11,6 +11,13 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+/**
+ * 
+ * @author xbw
+ * 
+ *         2019年10月9日
+ *
+ */
 @Getter
 @Setter
 @NoArgsConstructor
