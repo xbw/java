@@ -33,11 +33,10 @@ public class Json {
 		json(list);
 	}
 
-	@SuppressWarnings("static-access")
 	public static void json(JsonBean bean) {
 		JSONObject jsonObject = JSONObject.fromObject(bean);// 对象转JSONObject
 		log.info("toJson - {}", jsonObject);
-		bean = (JsonBean) jsonObject.toBean(jsonObject, JsonBean.class);
+		bean = (JsonBean) JSONObject.toBean(jsonObject, JsonBean.class);
 		log.info("fromJson - {}", bean);
 	}
 
