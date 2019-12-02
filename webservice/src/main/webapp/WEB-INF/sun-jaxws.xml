@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- webService接口定义 -->
+<endpoints xmlns='http://java.sun.com/xml/ns/jax-ws/ri/runtime' version='2.0'>
+	<endpoint name='ServiceImpl' implementation='com.xbw.ws.service.impl.ServiceImpl' url-pattern='/services/jaxws/ws' />
+	<endpoint name='ServiceHelloImpl' implementation='com.xbw.ws.service.impl.ServiceHelloImpl' url-pattern='/services/jaxws/hello' />
+	<endpoint name='ServiceByeImpl' implementation='com.xbw.ws.service.impl.ServiceByeImpl' url-pattern="/services/jaxws/bye" />
+</endpoints>
