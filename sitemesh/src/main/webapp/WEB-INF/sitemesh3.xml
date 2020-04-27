@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemesh>
+	<mime-type>text/html</mime-type>
+	<mime-type>application/vnd.wap.xhtml+xml</mime-type>
+	<mime-type>application/xhtml+xml</mime-type>
+
+
+	<mapping path="/sitemesh3/*" decorator="/decorators/sitemesh3/default.jsp" />
+	<!-- <mapping>
+		<path>/sitemesh3/*</path>
+		<decorator>/decorators/sitemesh3/blank.jsp</decorator>
+		<decorator>/decorators/sitemesh3/default.jsp</decorator>
+		<decorator>/decorators/sitemesh3/main.jsp</decorator>
+	</mapping> -->
+</sitemesh>

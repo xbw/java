@@ -9,5 +9,10 @@
 	<a href="./sitemesh2/test.jsp">test</a>
 	<a href="./sitemesh2/test1.jsp">test1</a>
 	<a href="./sitemesh2/test2.jsp">test2</a>
+	<hr />
+	sitemesh3
+	<a href="./sitemesh3/test.jsp">test</a>
+	<a href="./sitemesh3/test1.jsp">test1</a>
+	<a href="./sitemesh3/test2.jsp">test2</a>
 </body>
 </html>
