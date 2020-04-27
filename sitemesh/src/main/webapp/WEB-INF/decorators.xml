@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- * defaultdir: 包含装饰器页面的目录 -->
+<!-- * page : 页面文件名 -->
+<!-- * name : 别名 -->
+<!-- * role : 角色，用于安全 -->
+<!-- * webapp : 可以另外指定此文件存放目录 -->
+<!-- * patterns : 匹配的路径，可以用*,那些被访问的页面需要被装饰。 -->
+<decorators defaultdir="/decorators"> <!--装饰文件存放的目录 -->
+	<!-- 默认装饰页面, 在需要装饰的页面增加<meta name="decorator" content="default"/> -->
+	<decorator name="default" page="sitemesh2/default.jsp">
+		<!--要被装饰的页面，如是“ /* ”指对WebContent\目录下的所有JSP页面进行装饰 -->
+		<pattern>/sitemesh2/*</pattern>
+		<!-- <pattern>/test.jsp</pattern> -->
+	</decorator>
+	<decorator name="main" page="sitemesh2/main.jsp" />
+	<decorator name="blank" page="sitemesh2/blank.jsp" />
+	<!-- <decorator name="printable" page="printable.jsp" role="customer" webapp="aaa" /> -->
+
+	<excludes>    <!--过滤不被装饰的页面 -->
+		<pattern>/index.jsp</pattern>
+		<pattern>/exclude/*</pattern>
+	</excludes>
+</decorators>
