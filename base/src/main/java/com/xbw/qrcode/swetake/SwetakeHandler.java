@@ -1,4 +1,4 @@
-package com.xbw.base.qrcode.swetake;
+package com.xbw.qrcode.swetake;
 
 import java.awt.Color;
 import java.awt.Graphics2D;
