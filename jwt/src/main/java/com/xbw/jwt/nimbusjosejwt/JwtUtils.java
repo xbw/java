@@ -29,7 +29,7 @@ public class JwtUtils {
 
 	/**
 	 * 生成一个token
-	 * 
+	 *
 	 * @param sub
 	 * @return
 	 * @throws JOSEException
@@ -150,7 +150,7 @@ public class JwtUtils {
 		Map<String, Object> resultMap = validateJWT(token);
 		System.out.println((String) resultMap.get("mgs"));
 		Map<?, ?> map = (Map<?, ?>) JSONValue.parse((String) resultMap.get("mgs"));
-		if ((int) map.get("success") == 1) {
+		if ("1".equals(map.get("success"))) {
 			JSONObject jsonObject = (JSONObject) resultMap.get("data");
 			System.out.println(jsonObject.get("sub"));
 		}
