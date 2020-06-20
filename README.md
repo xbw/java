@@ -1,5 +1,6 @@
 # java
 
+---
 ## Base
 - Encode
   - java.net.URLEncoder
@@ -20,6 +21,7 @@
   - java.time.*
   - org.joda.time.*
 
+---
 ## JSON
 - com.alibaba.fastjson.*
 - com.google.gson.*
@@ -28,6 +30,19 @@
 - org.json.*
 - net.sf.json.*
 
+---
+## JWT
+- com.nimbusds.jose.*
+- io.jsonwebtoken.*
+- org.jose4j.*
+
+---
+## Office/PDF
+
+---
+## SiteMesh
+
+---
 ## Web Service
 - org.apache.cxf.*
 - javax.xml.ws.*
