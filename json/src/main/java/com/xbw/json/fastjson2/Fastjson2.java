@@ -1,7 +1,6 @@
-package com.xbw.json.fastjson;
+package com.xbw.json.fastjson2;
 
-import com.alibaba.fastjson.JSONArray;
-import com.alibaba.fastjson.JSONObject;
+import com.alibaba.fastjson2.JSON;
 import com.xbw.json.JsonBean;
 import lombok.extern.slf4j.Slf4j;
 
@@ -13,19 +12,19 @@ import java.util.List;
  * 2019年10月9日
  */
 @Slf4j
-public class Fastjson {
+public class Fastjson2 {
 
     public static void json(JsonBean bean) {
-        String json = JSONObject.toJSONString(bean);
+        String json = JSON.toJSONString(bean);
         log.info("toJson - {}", json);
-        bean = JSONObject.parseObject(json, JsonBean.class);
+        bean = JSON.parseObject(json, JsonBean.class);
         log.info("fromJson - {}", bean);
     }
 
     public static void json(List<JsonBean> list) {
-        String json = JSONArray.toJSONString(list);
+        String json = JSON.toJSONString(list);
         log.info("toJson - {}", json);
-        list = JSONArray.parseArray(json, JsonBean.class);
+        list = JSON.parseArray(json, JsonBean.class);
         log.info("fromJson - {}", list);
     }
 }

@@ -24,6 +24,7 @@
 ---
 ## JSON
 - com.alibaba.fastjson.*
+- com.alibaba.fastjson2.*
 - com.google.gson.*
 - com.fasterxml.jackson.*
 - org.codehaus.jackson.*

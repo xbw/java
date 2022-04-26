@@ -1,6 +1,7 @@
 package com.xbw.json;
 
 import com.xbw.json.fastjson.Fastjson;
+import com.xbw.json.fastjson2.Fastjson2;
 import com.xbw.json.gson.GoogleGson;
 import com.xbw.json.jackson.Jackson;
 import com.xbw.json.jsonlib.JsonLib;
@@ -33,6 +34,12 @@ class JsonTests {
     void fastjson() {
         Fastjson.json(jsonBean);
         Fastjson.json(list);
+    }
+
+    @Test
+    void fastjson2() {
+        Fastjson2.json(jsonBean);
+        Fastjson2.json(list);
     }
 
     @Test
